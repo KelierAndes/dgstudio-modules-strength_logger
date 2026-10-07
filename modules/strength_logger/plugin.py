@@ -1,9 +1,3 @@
-"""示例联动模块：强度日志。
-
-演示 ModuleContext 的最小用法：订阅引擎状态事件，把各设备通道的强度
-变化写入应用日志（每台设备每秒最多一条，避免刷屏）。默认不启用，
-可在「模块」页安装体验，或作为开发模板复制修改。
-"""
 
 META = {
     "id": "strength_logger",
@@ -15,10 +9,6 @@ META = {
 
 
 class StrengthLogger:
-    """不继承也可运行——宿主按 ModuleBase 协议鸭子类型调用。
-
-    继承 plugins.ModuleBase 可以获得默认空实现与 IDE 提示，推荐继承。
-    """
 
     id = META["id"]
     name = META["name"]
